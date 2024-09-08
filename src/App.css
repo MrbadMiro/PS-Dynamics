@@ -1,0 +1,284 @@
+
+
+/* General reset and body styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+nav .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav .menu .logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.img {
+  height: 90vh;
+  background-color: #333; /* Fallback color in case the image is not loaded */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.center .title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.center .btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Center the buttons horizontally */
+}
+
+.center .btns button {
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.center .btns button:first-child {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.center .btns button:first-child:hover {
+  background-color: #ff4c4c;
+}
+
+.center .btns button:last-child {
+  background-color: #fff;
+  color: #333;
+}
+
+.center .btns button:last-child:hover {
+  background-color: #ddd;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 100px 50px;
+  background-color: #fff;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.about img.pic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about .text {
+  max-width: 600px;
+}
+
+.about .text h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.about .text h5 {
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.about .text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about .data .hire {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.about .data .hire:hover {
+  background-color: #555;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .logo-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+footer .logo-details .logo_name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 0px;
+}
+
+footer .link-boxes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+footer .link-boxes ul {
+  list-style: none;
+}
+
+footer .link-boxes ul li {
+  margin-bottom: 15px;
+}
+
+footer .link-boxes ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer .link-boxes ul li a:hover {
+  color: #fff;
+}
+
+footer .link-boxes .input-box input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+footer .link-boxes .input-box input[type="button"] {
+  padding: 10px;
+  border: none;
+  background-color: #ff6b6b;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+footer .link-boxes .input-box input[type="button"]:hover {
+  background-color: #ff4c4c;
+}
+
+/* Bottom Footer */
+.bottom-details {
+  background-color: #222;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.bottom-details .bottom_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.bottom-details .bottom_text .policy_terms a {
+  color: #bbb;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.bottom-details .bottom_text .policy_terms a:hover {
+  color: #fff;
+}
+
+.bottom-details .bottom_text .copyright_text {
+  color: #bbb;
+}
